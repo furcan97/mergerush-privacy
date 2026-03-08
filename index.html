@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MergeRush – Gizlilik Politikası</title>
+  <style>
+    :root {
+      --bg: #0f0c1a;
+      --card: #1a1035;
+      --accent: #a855f7;
+      --gold: #f59e0b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: rgba(168, 85, 247, 0.25);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    header {
+      background: linear-gradient(135deg, #1a1035, #0f0c1a);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+    header .emoji { font-size: 64px; display: block; margin-bottom: 12px; }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    header p { color: var(--muted); margin-top: 8px; font-size: 0.9rem; }
+    main { max-width: 780px; margin: 0 auto; padding: 40px 24px 80px; }
+    section { margin-bottom: 40px; }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: linear-gradient(var(--accent), var(--gold));
+      border-radius: 2px;
+    }
+    p { color: var(--text); margin-bottom: 10px; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    ul li { color: var(--text); margin-bottom: 6px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+    .service-list { list-style: none; padding: 0; }
+    .service-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .service-list li:last-child { border-bottom: none; }
+    .service-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+    .badge {
+      display: inline-block;
+      background: rgba(168, 85, 247, 0.15);
+      color: var(--accent);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 2px 10px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-left: 6px;
+    }
+    .contact-box {
+      background: linear-gradient(135deg, rgba(168,85,247,0.1), rgba(245,158,11,0.05));
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="emoji">🐲</span>
+  <h1>MergeRush</h1>
+  <p>Gizlilik Politikası / Privacy Policy</p>
+  <p style="margin-top:6px;">Son güncelleme: 9 Mart 2026 &nbsp;·&nbsp; Last updated: March 9, 2026</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Genel Bilgi / Overview</h2>
+    <p>
+      MergeRush, hayvanları birleştirerek puan topladığınız bir mobil bulmaca oyunudur.
+      Bu gizlilik politikası, uygulamanın hangi verileri topladığını, nasıl kullandığını ve koruduğunu açıklar.
+    </p>
+    <p>
+      MergeRush is a mobile merge puzzle game. This privacy policy explains what data the app collects, how it is used, and how it is protected.
+    </p>
+  </section>
+
+  <section>
+    <h2>Toplanan Veriler / Data We Collect</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Kimlik doğrulama / Authentication:</strong> E-posta adresi ve şifre (Firebase Authentication). Anonim oturum da desteklenir.</li>
+        <li><strong>Oyun verileri / Game data:</strong> Skor, seviye, booster stoku, satın alım geçmişi (Firestore'da saklanır).</li>
+        <li><strong>Analitik / Analytics:</strong> Ekran görüntülemeleri ve uygulama kullanım olayları (Firebase Analytics).</li>
+        <li><strong>Reklam / Advertising:</strong> Reklam kimliği ve kullanım verileri (Google AdMob). iOS 14+ için kullanıcı onayı istenir (ATT).</li>
+        <li><strong>Push bildirimleri / Push notifications:</strong> Oyun içi bildirimler için cihaz token'ı (Firebase Cloud Messaging).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Üçüncü Taraf Hizmetler / Third-Party Services</h2>
+    <ul class="service-list card">
+      <li>
+        <span class="service-icon">🔥</span>
+        <div>
+          <strong>Google Firebase</strong><span class="badge">Auth · Firestore · Analytics · FCM · Remote Config</span><br/>
+          <small style="color:var(--muted);">Google'ın gizlilik politikası: <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></small>
+        </div>
+      </li>
+      <li>
+        <span class="service-icon">📢</span>
+        <div>
+          <strong>Google AdMob</strong><span class="badge">Reklamlar</span><br/>
+          <small style="color:var(--muted);">Kişiselleştirilmiş reklamlar için izleme onayı (ATT) istenir. <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob gizlilik</a></small>
+        </div>
+      </li>
+      <li>
+        <span class="service-icon">💳</span>
+        <div>
+          <strong>RevenueCat</strong><span class="badge">Uygulama içi satın alım</span><br/>
+          <small style="color:var(--muted);"><a href="https://www.revenuecat.com/privacy" target="_blank">revenuecat.com/privacy</a></small>
+        </div>
+      </li>
+      <li>
+        <span class="service-icon">🍎</span>
+        <div>
+          <strong>Sign in with Apple / Google Sign-In</strong><span class="badge">Kimlik doğrulama</span><br/>
+          <small style="color:var(--muted);">Seçili kimlik doğrulama yönteminize ait gizlilik politikası geçerlidir.</small>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Verilerin Kullanımı / How We Use Data</h2>
+    <ul>
+      <li>Oyun ilerlemesini ve skorlarını kaydetmek</li>
+      <li>Kullanıcı hesabını yönetmek</li>
+      <li>Kişiselleştirilmiş veya kişiselleştirilmemiş reklamlar göstermek</li>
+      <li>Uygulamayı iyileştirmek amacıyla anonim kullanım analizi yapmak</li>
+      <li>Push bildirimleri göndermek (kullanıcı izniyle)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Çocukların Gizliliği / Children's Privacy</h2>
+    <p>
+      MergeRush 13 yaş altı çocuklara yönelik değildir ve bilerek bu yaş grubundan kişisel veri toplamaz.
+      Ebeveynler farkında olmadan veri toplandığını düşünüyorsa bizimle iletişime geçebilir.
+    </p>
+    <p>
+      MergeRush is not directed to children under 13 and does not knowingly collect personal data from them.
+    </p>
+  </section>
+
+  <section>
+    <h2>Veri Saklama ve Silme / Data Retention &amp; Deletion</h2>
+    <p>
+      Hesabınızı uygulama içinden silebilirsiniz (<em>Profil → Hesap Seçenekleri → Hesabı Sil</em>).
+      Hesap silindiğinde Firebase Authentication ve Firestore'daki verileriniz kalıcı olarak kaldırılır.
+    </p>
+    <p>
+      You can delete your account from the app (<em>Profile → Account Options → Delete Account</em>).
+      Upon deletion, your Firebase Auth and Firestore data is permanently removed.
+    </p>
+  </section>
+
+  <section>
+    <h2>Güvenlik / Security</h2>
+    <p>
+      Verileriniz Google'ın güvenli altyapısı (Firebase) üzerinde şifrelenmiş olarak saklanır.
+      Uygulama HTTPS üzerinden iletişim kurar ve yetkisiz erişimi önlemek için Firebase Security Rules kullanır.
+    </p>
+  </section>
+
+  <section>
+    <h2>Değişiklikler / Changes to This Policy</h2>
+    <p>
+      Bu politika zaman zaman güncellenebilir. Önemli değişiklikler olduğunda bu sayfada belirtilecektir.
+      Uygulamayı kullanmaya devam etmeniz, güncel politikayı kabul ettiğiniz anlamına gelir.
+    </p>
+  </section>
+
+  <section>
+    <h2>İletişim / Contact</h2>
+    <div class="contact-box">
+      <p>Sorularınız için:</p>
+      <p>📧 <a href="mailto:furkan@eatspoiler.com">furkan@eatspoiler.com</a></p>
+      <p>🌐 <a href="https://furcan97.github.io/MergeRush/" target="_blank">furcan97.github.io/MergeRush</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2026 MergeRush · All rights reserved · <a href="mailto:furkan@eatspoiler.com">furkan@eatspoiler.com</a>
+</footer>
+
+</body>
+</html>
